@@ -7,3 +7,6 @@
 - HTML5
 - CSS3
 - Slick Slider
+
+### UX/UI Template
+![Template Code Challenge Source Img](client/images/code-challenge2020.jpg)
