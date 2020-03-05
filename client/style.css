@@ -10,15 +10,15 @@ body{
 }
 
 .parent-header{
-  background-color: #ECECEC;
+  background-color: #333;
   height: 12%;
   width: 100%;
 }
 
 .parent-main{
   display: flex;
-  background-color: #333;
-  height: 58%;
+  background-color: #ECECEC;
+  height: 55%;
   width: 100%;
 }
 
@@ -32,10 +32,15 @@ body{
   width: 50%;
 }
 
-.parent-footer{
+.parent-slider{
+  background-color: #333;
+  height: 30%;
+  width: 100%;
+}
+
+.footer{
   background-color: #FFF;
   color:#333;
   font-family: Arial;
-  height: 30%;
-  width: 100%;
+  text-align: center;
 }
