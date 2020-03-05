@@ -1,7 +1,7 @@
 $(document).ready(initalizeApp);
 
 function initalizeApp() {
-  $('.your-class').slick({
+  $('.slick-slider').slick({
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 6
@@ -12,9 +12,10 @@ function initalizeApp() {
 
 
   function getSchedule(){
+    let data =
     $.ajax({
       dataType: "json",
-      url: "/schedule?country=:countrycode&date=:date",
+      url: `/schedule?country=:US&date=:${date}`,
       method: "GET",
       success: function (result) {
         $("#div1").html(result);
