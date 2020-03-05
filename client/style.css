@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+}
+
+.parent-flex{
+  display:flex;
+  flex-direction: column;
+  width: 100vw;
+  height:100vh;
+}
+
+.parent-header{
+  background-color: #ECECEC;
+  height: 10%;
+  width: 100%;
+}
+
+.parent-main{
+  background-color: #333;
+  height: 50%;
+  width: 100%;
+}
+
+.parent-footer{
+background-color: #FFF;
+  height: 40%;
+  width: 100%;
+}
