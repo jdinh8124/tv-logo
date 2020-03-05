@@ -11,18 +11,31 @@ body{
 
 .parent-header{
   background-color: #ECECEC;
-  height: 10%;
+  height: 12%;
   width: 100%;
 }
 
 .parent-main{
+  display: flex;
   background-color: #333;
-  height: 50%;
+  height: 58%;
   width: 100%;
 }
 
+.main-left{
+  height:100%;
+  width: 50%;
+}
+
+.main-right{
+  height:100%;
+  width: 50%;
+}
+
 .parent-footer{
-background-color: #FFF;
-  height: 40%;
+  background-color: #FFF;
+  color:#333;
+  font-family: Arial;
+  height: 30%;
   width: 100%;
 }
