@@ -12,13 +12,13 @@ function initalizeApp() {
 
 
   function getSchedule(){
-    let data =
+    let date ="2020-03-05"
     $.ajax({
       dataType: "json",
-      url: `/schedule?country=:US&date=:${date}`,
+      url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
       method: "GET",
       success: function (result) {
-        $("#div1").html(result);
+        console.log(result)
       },
     });
   }
