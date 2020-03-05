@@ -28,13 +28,18 @@ body{
 
 .main-left{
   width: 50%;
+  display: flex;
+}
+
+.pick-of-the-week{
+    margin: auto;
 }
 
 .main-right{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 50%;
+  width: 52%;
 }
 
 .icons-genres{
@@ -43,16 +48,20 @@ body{
   justify-content: space-between;
 }
 
+/* .icons-genres > img{
+  height: 15vh;
+} */
+
 .parent-slider{
   background-color: #333;
   height: 30%;
 }
 
 .footer{
+  display: flex;
   height: 5%;
-  line-height: 60px;
   background-color: #FFF;
   color:#333;
-  font-family: Arial;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
