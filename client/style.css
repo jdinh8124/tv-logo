@@ -32,12 +32,13 @@ body{
 
 .main-right{
   display: flex;
-
+  justify-content: space-around;
   flex-direction: column;
   width: 50%;
 }
 
 .icons-genres{
+  width:80%;
   display: flex;
   justify-content: space-between;
 }
