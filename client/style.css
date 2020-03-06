@@ -51,7 +51,7 @@ body{
 }
 
 .browse-by-genre{
-  margin: 15px 0 15px 0;
+  margin: 25px 0 10px 0;
 }
 
 .now-playing{
@@ -107,16 +107,27 @@ body{
   width: 60px;
 }
 .browse-by-genre{
-  width: 320px;
+  width: 220px;
 }
 
 .now-playing{
-    width: 320px;
-
+    width: 380px;
+    height: 120px;
 }
 
 .show-pic{
-  height: 90px;
+  height: 100px;
 }
+
+.margin-around{
+  margin: 12px 0 15px 0;
+}
+
+.tomorrows-schedule{
+  height: 25px;
+}
+}
+
+@media screen and (max-width: 1415px){
 
 }
