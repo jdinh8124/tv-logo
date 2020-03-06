@@ -66,13 +66,17 @@ body{
 }
 
 #slide{
-    width: 76%;
+    width: 90%;
+}
+
+.slick-slider{
+      width:100%;
 }
 
 
-
 .show-pic{
-  height: 150px;
+  margin-left: 60px;
+  height: 170px;
 }
 
 .footer{
