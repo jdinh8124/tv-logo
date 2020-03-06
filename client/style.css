@@ -10,32 +10,68 @@ body{
 }
 
 .parent-header{
-  background-color: #ECECEC;
-  height: 12%;
-  width: 100%;
+  background-color: #333;
+  height: 13%;
+  top:5px;
+}
+.tv-img{
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
 }
 
 .parent-main{
   display: flex;
-  background-color: #333;
-  height: 58%;
-  width: 100%;
+  background-color: #ECECEC;
+  height: 50%;
+
 }
 
 .main-left{
-  height:100%;
   width: 50%;
+  display: flex;
+}
+
+.pick-of-the-week{
+    margin: auto;
 }
 
 .main-right{
-  height:100%;
-  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 52%;
 }
 
-.parent-footer{
+.icons-genres{
+  width:70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .icons-genres > img{
+  height: 15vh;
+} */
+
+.parent-slider{
+  background-color: #333;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slick-slider{
+  height: 33%;
+  overflow-x: hidden;
+
+}
+
+.footer{
+  display: flex;
+  height: 5%;
   background-color: #FFF;
   color:#333;
-  font-family: Arial;
-  height: 30%;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
