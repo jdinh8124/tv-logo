@@ -50,9 +50,15 @@ body{
   justify-content: space-between;
 }
 
-/* .icons-genres > img{
-  height: 15vh;
-} */
+.browse-by-genre{
+  margin: 15px 0 15px 0;
+}
+
+.now-playing{
+  margin: 25px 0px 25px 0;
+  width: 700px;
+  height: 230px;
+}
 
 .parent-slider{
   background-color: #333;
@@ -87,4 +93,30 @@ body{
   color:#333;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1415px){
+.tv-img{
+  width: 150px;
+}
+.pick-of-the-week{
+  width: 350px;
+}
+
+.icons-genres > img{
+  width: 60px;
+}
+.browse-by-genre{
+  width: 320px;
+}
+
+.now-playing{
+    width: 320px;
+
+}
+
+.show-pic{
+  height: 90px;
+}
+
 }
