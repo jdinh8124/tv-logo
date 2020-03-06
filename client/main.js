@@ -14,7 +14,20 @@ function initalizeApp() {
 
 
   function getSchedule(){
-    let date ="2020-03-05"
+    let currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+    let day = currentDate.getDate()
+    let month = currentDate.getMonth() + 1
+    console.log(month)
+    if(month < 10){
+      month = "0" + month;
+    }
+    if (day < 10) {
+      day = "0" + day;
+    }
+    let year = currentDate.getFullYear()
+    let date = `${year}-${month}-${day}`;
+
+    console.log(date)
     $.ajax({
       dataType: "json",
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
