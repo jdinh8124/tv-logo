@@ -3,6 +3,7 @@ $(document).ready(initalizeApp);
 function initalizeApp() {
   $('.slick-slider').slick({
     infinite: true,
+    arrows: true,
     slidesToShow: 6,
     slidesToScroll: 6
   });
@@ -18,7 +19,12 @@ function initalizeApp() {
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
       method: "GET",
       success: function (result) {
-        console.log(result)
-      },
-    });
-  }
+        for(let i = 0; i < 26; i++){
+          let image = result[i].show.image.medium;
+          let altDescription = result[i].show.name;
+           let picture = $("<img>").attr("src", image).attr("alt", altDescription)
+          $('.slick-slider').append(picture);
+       }
+     },
+   });
+ }
