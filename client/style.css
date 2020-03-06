@@ -2,6 +2,7 @@ body{
   margin: 0;
 }
 
+
 .parent-flex{
   display:flex;
   flex-direction: column;
@@ -61,10 +62,22 @@ body{
   align-items: center;
 }
 
-.slick-slider{
-  height: 33%;
-  overflow-x: hidden;
+.margin-around{
+  margin: 20px;
+}
 
+#slide{
+    width: 90%;
+}
+
+.slick-slider{
+      width:100%;
+}
+
+
+.show-pic{
+  margin-left: 60px;
+  height: 170px;
 }
 
 .footer{
