@@ -61,10 +61,19 @@ body{
   align-items: center;
 }
 
-.slick-slider{
-  height: 33%;
-  overflow-x: hidden;
+.margin-around{
+  margin: 20px;
+}
 
+#slide{
+    width: 70%;
+}
+
+/* .slick-slide{
+} */
+
+.show-pic{
+  height: 150px;
 }
 
 .footer{
