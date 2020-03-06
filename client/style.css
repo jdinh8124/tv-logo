@@ -59,6 +59,11 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.slick-slider{
+  height: 33%;
+  overflow-x: hidden;
 
 }
 

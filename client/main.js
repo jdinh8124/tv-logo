@@ -1,9 +1,10 @@
 $(document).ready(initalizeApp);
 
 function initalizeApp() {
-  $('.slick-slider').slick({
+  $('#slide .slick-slider').slick({
     infinite: true,
     arrows: true,
+    dots:true,
     slidesToShow: 6,
     slidesToScroll: 6
   });
@@ -22,7 +23,7 @@ function initalizeApp() {
         for(let i = 0; i < 26; i++){
           let image = result[i].show.image.medium;
           let altDescription = result[i].show.name;
-           let picture = $("<img>").attr("src", image).attr("alt", altDescription)
+          let picture = $("<img>").attr("src", image).attr("alt", altDescription).addClass("tmr-tv-icon")
           $('.slick-slider').append(picture);
        }
      },
