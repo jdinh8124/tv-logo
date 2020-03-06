@@ -152,3 +152,25 @@ body{
   height: 8rem;
 }
 }
+
+ @media screen and (max-width: 815px){
+.tv-img{
+  height: 3rem;
+  width:10rem;
+}
+.pick-of-the-week{
+  height: 11rem;
+}
+.icons-genres > img{
+  height: 5rem;
+}
+.now-playing{
+    width: 20rem;
+    height: 6rem;
+}
+
+.show-pic{
+  height: 4rem;
+}
+
+ }
