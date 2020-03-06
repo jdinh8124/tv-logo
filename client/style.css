@@ -56,8 +56,8 @@ body{
 
 .now-playing{
   margin: 25px 0px 25px 0;
-  width: 700px;
-  height: 230px;
+  width: 40rem;
+  height: 13rem;
 }
 
 .parent-slider{
@@ -83,7 +83,7 @@ body{
 
 .show-pic{
   margin-left: 60px;
-  height: 170px;
+  height: 11.5rem;
 }
 
 .footer{
@@ -94,29 +94,28 @@ body{
   align-items: center;
   justify-content: center;
 }
-
-@media screen and (min-width: 1370px) and (max-width: 1415px){
+@media screen  and (max-width: 1300px){
 .tv-img{
-  width: 150px;
+  width: 10rem
 }
 .pick-of-the-week{
-  width: 350px;
+  height: 16rem;
 }
 
 .icons-genres > img{
-  width: 60px;
+  height: 5rem;
 }
 .browse-by-genre{
-  width: 220px;
+  width: 15rem;
 }
 
 .now-playing{
-    width: 380px;
-    height: 120px;
+    width: 25rem;
+    height: 8rem;
 }
 
 .show-pic{
-  height: 100px;
+  height: 6rem;
 }
 
 .margin-around{
@@ -124,44 +123,32 @@ body{
 }
 
 .tomorrows-schedule{
-  height: 25px;
+  height: 1.5rem;
 }
 }
 
-@media screen and (max-width: 1415px){
-.now-playing{
-    width: 620px;
-}
-.browse-by-genre{
-  width: 450px;
-}
-
-.icons-genres{
-  width:85%;
-}
-
-}
 
 
-@media screen and (max-width: 1035px){
+ @media screen and (max-width: 1035px){
 .tv-img{
-  width: 220px;
+  height: 4rem;
 }
 .pick-of-the-week{
-  width: 400px;
+  height: 20rem;
 }
+
 .icons-genres > img{
-  width: 60px;
+  height: 8rem;
 }
 .icons-genres{
-  width:65%;
+  width:95%;
 }
 .now-playing{
-    width: 480px;
-    height: 160px;
+    width: 30rem;
+    height: 10rem;
 }
 
 .show-pic{
-  height: 120px;
+  height: 8rem;
 }
 }

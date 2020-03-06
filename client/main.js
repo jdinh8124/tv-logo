@@ -25,7 +25,7 @@ function initalizeApp() {
           let altDescription = result[i].show.name;
           let picture = $("<img>").attr("src", image).attr("alt", altDescription).addClass('show-pic')
           let divToAppendPic = `.show${i}`;
-          $(divToAppendPic).append(picture);
+          $(divToAppendPic).append(picture)
        }
      },
    });
