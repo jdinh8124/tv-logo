@@ -226,10 +226,19 @@ body{
   .margin-around{
     margin: 0;
   }
+}
 
-  @media screen and (max-width: 415px) {
-
-
+ @media screen and (max-width: 455px) {
+  .parent-main{
+    flex-direction: column;
   }
 
- }
+  .main-left, .main-right{
+    width: 100%
+  }
+
+  .pick-of-the-week{
+  height: 12rem;
+}
+
+  }
