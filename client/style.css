@@ -55,8 +55,8 @@ body{
 
 .now-playing{
   margin: 25px 0px 25px 0;
-  width: 40rem;
-  height: 13rem;
+  width: 35rem;
+  height: 11rem;
 }
 
 .parent-slider{
@@ -87,7 +87,8 @@ body{
 
 .footer{
   display: flex;
-  height: 5%;
+  font-family: arial;
+  height: 7%;
   background-color: #FFF;
   color:#333;
   align-items: center;
@@ -269,7 +270,7 @@ body{
   }
 
   .parent-slider{
-    height: 23vh;
+    height: 19vh;
   }
 
   .show-pic{
@@ -282,5 +283,6 @@ body{
   }
   .tomorrows-schedule{
     height: 1.75rem;
+    padding-bottom: 0px;
   }
 }
