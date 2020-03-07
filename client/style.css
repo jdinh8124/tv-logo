@@ -2,7 +2,6 @@ body{
   margin: 0;
 }
 
-
 .parent-flex{
   display:flex;
   flex-direction: column;
@@ -229,6 +228,10 @@ body{
 }
 
  @media screen and (max-width: 455px) {
+  .tv-img{
+    margin-bottom: 25px;
+    margin-left: 55px;
+}
   .parent-main{
     flex-direction: column;
   }
@@ -238,7 +241,27 @@ body{
   }
 
   .pick-of-the-week{
-  height: 12rem;
+  height: 15rem;
+  margin-top: 15px;
 }
+  .icons-genres > img{
+  height: 4.25em;
+}
+  .now-playing{
+    width: 24rem;
+  }
+  .browse-by-genre, .icons-genres > img, .now-playing{
+    margin-left: 10px;
+  }
+  .parent-flex{
+    height: 100%;
+  }
 
+  .show-pic{
+  height: 4rem;
+  margin-left: 0px;
+}
+  .slide{
+    width: 85%;
+  }
   }
