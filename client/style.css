@@ -33,7 +33,7 @@ body{
 }
 
 .pick-of-the-week{
-    margin: auto;
+  margin: auto;
 }
 
 .main-right{
@@ -72,11 +72,11 @@ body{
 }
 
 #slide{
-    width: 90%;
+  width: 90%;
 }
 
 .slick-slider{
-      width:100%;
+  width:100%;
 }
 
 
@@ -93,75 +93,76 @@ body{
   align-items: center;
   justify-content: center;
 }
+
 @media screen  and (max-width: 1300px){
-.tv-img{
-  width: 10rem
+  .tv-img{
+    width: 10rem
 }
-.pick-of-the-week{
-  height: 16rem;
-}
-
-.icons-genres > img{
-  height: 5rem;
-}
-.browse-by-genre{
-  width: 15rem;
+  .pick-of-the-week{
+    height: 16rem;
 }
 
-.now-playing{
+  .icons-genres > img{
+    height: 5rem;
+}
+  .browse-by-genre{
+    width: 15rem;
+}
+
+  .now-playing{
     width: 25rem;
     height: 8rem;
 }
 
-.show-pic{
-  height: 6rem;
+  .show-pic{
+    height: 6rem;
 }
 
-.margin-around{
-  margin: 12px 0 15px 0;
+  .margin-around{
+    margin: 12px 0 15px 0;
 }
 
-.tomorrows-schedule{
-  height: 1.5rem;
+  .tomorrows-schedule{
+    height: 1.5rem;
 }
 }
-
 
  @media screen and (max-width: 1035px) {
-.tv-img{
-  height: 5rem;
-  width: 15rem;
+  .tv-img{
+    height: 5rem;
+    width: 15rem;
 }
-.pick-of-the-week{
-  height: 21rem;
+  .pick-of-the-week{
+    height: 21rem;
 }
 
-.icons-genres > img{
-  height: 8rem;
+  .icons-genres > img{
+    height: 8rem;
 }
-.icons-genres{
-  width:95%;
+  .icons-genres{
+    width:95%;
 }
-.now-playing{
+  .now-playing{
     width: 24rem;
     height: 10rem;
 }
 
-.show-pic{
-  height: 8rem;
+  .show-pic{
+    height: 8rem;
 }
 }
- @media screen and (max-width: 1035px) and (min-height: 1070px){
+
+@media screen and (max-width: 1035px) and (min-height: 1070px){
   .tv-img{
-  margin-top: 40px;
+    margin-top: 40px;
 }
   .show-pic{
-  height: 12rem;
-  margin-left: 0;
+    height: 12rem;
+    margin-left: 0;
 }
   .tomorrows-schedule{
-  height: 3rem;
-  margin: 20px 0 35px 0;
+    height: 3rem;
+    margin: 20px 0 35px 0;
 }
   .now-playing{
     width: 31rem;
@@ -171,43 +172,43 @@ body{
     width: 25rem;
     height: 4rem;
   }
- }
+}
 
 @media screen and (max-width: 915px) {
   .pick-of-the-week{
-  height: 15rem;
+    height: 15rem;
 }
   .tomorrows-schedule{
-  height: 2.5rem;
-  padding-bottom: 15px;
+    height: 2.5rem;
+    padding-bottom: 15px;
 }
   .show-pic{
-  height: 9rem;
-  margin-left: 0 ;
+    height: 9rem;
+    margin-left: 0 ;
 }
   .footer{
     font-size: 11px;
   }
 }
- @media screen and (max-width: 790px) and (min-height: 1015px){
+@media screen and (max-width: 790px) and (min-height: 1015px){
   .tv-img{
-  top: 25px;
+    top: 25px;
 }
 }
 
- @media screen and (max-width: 815px) and (max-height: 415px){
-.tv-img{
-  height: 2.5rem;
-  width: 7rem;
-  top: 4px;
+@media screen and (max-width: 815px) and (max-height: 415px){
+  .tv-img{
+    height: 2.5rem;
+    width: 7rem;
+    top: 4px;
 }
-.pick-of-the-week{
-  height: 11rem;
+  .pick-of-the-week{
+    height: 11rem;
 }
-.icons-genres > img{
-  height: 4rem;
+  .icons-genres > img{
+    height: 4rem;
 }
-.now-playing{
+  .now-playing{
     width: 14rem;
     height: 4rem;
     margin: 0;
@@ -218,13 +219,13 @@ body{
     margin: 0;
   }
 
-.show-pic{
-  height: 4rem;
-  margin-left: 30px;
+  .show-pic{
+    height: 4rem;
+    margin-left: 30px;
 }
   .tomorrows-schedule{
-  height: 1.15rem;
-  padding-bottom: 10px;
+    height: 1.15rem;
+    padding-bottom: 10px;
 }
   .margin-around{
     margin: 0;
@@ -236,6 +237,7 @@ body{
     margin-bottom: 25px;
     margin-left: 55px;
 }
+
   .parent-main{
     flex-direction: column;
   }
@@ -245,34 +247,40 @@ body{
   }
 
   .pick-of-the-week{
-  height: 15rem;
-  margin-top: 15px;
+    height: 15rem;
+    margin-top: 15px;
 }
+
   .icons-genres > img{
-  height: 4.25em;
+    height: 4.25em;
 }
+
   .now-playing{
     width: 22rem;
     height: 8rem;
   }
+
   .browse-by-genre, .icons-genres > img, .now-playing{
     margin-left: 10px;
   }
+
   .parent-flex{
     height: 100%;
   }
+
   .parent-slider{
     height: 23vh;
   }
 
   .show-pic{
-  height: 3rem;
-  margin-left: 0px;
+    height: 3rem;
+    margin-left: 0px;
 }
+
   #slide{
     width: 85%;
   }
   .tomorrows-schedule{
     height: 1.75rem;
   }
-  }
+}
