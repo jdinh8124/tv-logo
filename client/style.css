@@ -173,7 +173,7 @@ body{
   }
  }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 915px) {
   .pick-of-the-week{
   height: 15rem;
 }
@@ -189,7 +189,11 @@ body{
     font-size: 11px;
   }
 }
-
+ @media screen and (max-width: 790px) and (min-height: 1015px){
+  .tv-img{
+  top: 25px;
+}
+}
 
  @media screen and (max-width: 815px) and (max-height: 415px){
 .tv-img{
@@ -227,7 +231,7 @@ body{
   }
 }
 
- @media screen and (max-width: 455px) {
+ @media screen and (max-width: 655px) {
   .tv-img{
     margin-bottom: 25px;
     margin-left: 55px;
