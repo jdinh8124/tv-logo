@@ -4,52 +4,42 @@ function initalizeApp() {
   getSchedule();
   $('.slick-slider').slick({
     arrows: true,
+    infinite: false,
     dots:false,
     slidesToShow: 6,
     slidesToScroll: 6,
-    accessibility: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+    accessibility: true
   });
 }
 
 
   function getSchedule(){
-    let date ="2020-03-05"
+    // let currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+    // let day = currentDate.getDate()
+    // let month = currentDate.getMonth() + 1
+    // console.log(month)
+    // if(month < 10){
+    //   month = "0" + month;
+    // }
+    // if (day < 10) {
+    //   day = "0" + day;
+    // }
+    // let year = currentDate.getFullYear()
+    // let date = `${year}-${month}-${day}`;
+    let date = "2020-03-06"
+    console.log(date)
     $.ajax({
       dataType: "json",
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
       method: "GET",
       success: function (result) {
+        console.log(result)
         for(let i = 0; i < 25; i++){
           let image = result[i].show.image.medium;
           let altDescription = result[i].show.name;
           let picture = $("<img>").attr("src", image).attr("alt", altDescription).addClass('show-pic')
           let divToAppendPic = `.show${i}`;
-          $(divToAppendPic).append(picture);
+          $(divToAppendPic).append(picture)
        }
      },
    });
