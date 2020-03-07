@@ -39,7 +39,7 @@ function initalizeApp() {
           let picture = $("<img>").attr("src", image).attr("alt", altDescription).addClass('show-pic')
           let divToAppendPic = `.show${i}`;
           $(divToAppendPic).append(picture)
-       }
-     },
-   });
- }
+      }
+    },
+  });
+}
