@@ -25,12 +25,13 @@
 ### UX/UI Template
 ![Template Code Challenge Source Img](client/images/code-challenge2020.jpg)
 
-### Live Demo
-- Full Screen
+## Live Demo
+
+### Full Screen
 ![Tv-Logo Landing Page](demo.gif)
 
-- Ipad Pro
+### Ipad Pro
 ![Tv-Logo Ipad Landing Page](demo-ipad.gif)
 
-- Iphone 6
+### Iphone 6
 ![Tv-Logo Landing Page](demo-iphone.gif)
