@@ -134,7 +134,7 @@ body{
 }
 }
 
- @media screen and (max-width: 1035px) {
+@media screen and (max-width: 1035px) {
   .tv-img{
     height: 5rem;
     width: 15rem;
@@ -153,11 +153,9 @@ body{
     width: 24rem;
     height: 10rem;
 }
-
   .show-pic{
     height: 8rem;
 }
-
 }
 
 @media screen and (max-width: 1035px) and (min-height: 1070px){
@@ -180,9 +178,6 @@ body{
     width: 25rem;
     height: 4rem;
   }
-
-
-
 }
 
 @media screen and (max-width: 915px) {
@@ -248,46 +243,36 @@ body{
     margin-bottom: 25px;
     margin-left: 55px;
 }
-
   .parent-main{
     flex-direction: column;
   }
-
   .main-left, .main-right{
     width: 100%
   }
-
   .pick-of-the-week{
     height: 15rem;
     margin-top: 15px;
 }
-
   .icons-genres > img{
     height: 4.25em;
 }
-
   .now-playing{
     width: 22rem;
     height: 8rem;
   }
-
   .browse-by-genre, .icons-genres > img, .now-playing{
     margin-left: 10px;
   }
-
   .parent-flex{
     height: 100%;
   }
-
   .parent-slider{
     height: 19vh;
   }
-
   .show-pic{
     height: 3rem;
     margin-left: 0px;
 }
-
   #slide{
     width: 85%;
   }
