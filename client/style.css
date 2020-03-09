@@ -72,7 +72,7 @@ body{
 }
 
 #slide{
-  width: 90%;
+  width: 75%;
 }
 
 .slick-slider{
@@ -95,6 +95,12 @@ body{
   justify-content: center;
 }
 
+@media screen  and (max-width: 1400px){
+  #slide{
+    width: 90%;
+  }
+}
+
 @media screen  and (max-width: 1300px){
   .tv-img{
     width: 10rem
@@ -111,8 +117,8 @@ body{
 }
 
   .now-playing{
-    width: 25rem;
-    height: 8rem;
+    width: 21rem;
+    height: 7rem;
 }
 
   .show-pic{
@@ -151,6 +157,7 @@ body{
   .show-pic{
     height: 8rem;
 }
+
 }
 
 @media screen and (max-width: 1035px) and (min-height: 1070px){
@@ -173,6 +180,9 @@ body{
     width: 25rem;
     height: 4rem;
   }
+
+
+
 }
 
 @media screen and (max-width: 915px) {
