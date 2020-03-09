@@ -17,8 +17,8 @@
 - TVmaze API
 
 ### Takeaways
-- Css Media Queries are a little more difficult without the boostrap grid system
-- Slick Slider CDN is compactable and efficent
+- Css Media Queries are a little more difficult without the bootstrap grid system
+- Slick Slider CDN is compactable and efficient
 - Slick Slider gives us a nice interface and many options to customize it to our UI needs
 - Finding tomorrows date is achievable with a little tinkering of the date object
 
