@@ -14,6 +14,7 @@
 - HTML5
 - CSS3
 - Slick Slider
+- TVmaze API
 
 ### Takeaways
 - Css Media Queries are a little more difficult without the boostrap grid system
