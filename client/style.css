@@ -2,6 +2,10 @@ body{
   margin: 0;
 }
 
+.hover:hover{
+  cursor: pointer;
+}
+
 .parent-flex{
   display:flex;
   flex-direction: column;
