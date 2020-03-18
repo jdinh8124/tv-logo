@@ -22,6 +22,8 @@
 - Slick Slider gives us a nice interface and many options to customize it to our UI needs
 - Finding tomorrows date is achievable with a little tinkering of the date object
 
+### Future additions
+- Responsiveness in regard to certain in between viewports
 
 ### UX/UI Template
 ![Template Code Challenge Source Img](client/images/code-challenge2020.jpg)
