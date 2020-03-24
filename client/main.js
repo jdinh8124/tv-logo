@@ -26,8 +26,8 @@ function initalizeApp() {
           let image = result[i].show.image.medium;
           let altDescription = result[i].show.name;
           let picture = $("<img>").attr("src", image).attr("alt", altDescription).addClass('show-pic')
-          let divToAppendPic = `.show${i}`;
-          $(divToAppendPic).append(picture)
+          let div = $("<div>").append(picture);
+          $(".slick-slider").append(div)
       }
         $('.slick-slider').slick({
           arrows: true,
