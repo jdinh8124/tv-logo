@@ -2,14 +2,6 @@ $(document).ready(initalizeApp);
 
 function initalizeApp() {
   getSchedule();
-  $('.slick-slider').slick({
-    arrows: true,
-    infinite: false,
-    dots:false,
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    accessibility: true
-  });
 }
 
 
@@ -37,6 +29,14 @@ function initalizeApp() {
           let divToAppendPic = `.show${i}`;
           $(divToAppendPic).append(picture)
       }
+        $('.slick-slider').slick({
+          arrows: true,
+          infinite: false,
+          dots: false,
+          slidesToShow: 6,
+          slidesToScroll: 6,
+          accessibility: true
+        });
     },
   });
 }
