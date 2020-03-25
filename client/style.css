@@ -84,7 +84,20 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 20vh;
+}
+
+.searchMain{
+  display: flex;
+}
+
+.leftSearch{
+  width: 40%;
+}
+
+.rightSearch{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 
 .bold{

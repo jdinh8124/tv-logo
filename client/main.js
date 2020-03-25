@@ -79,23 +79,23 @@ function searchShows(){
         let altDescription = result[i].show.name;
         let image = result[i].show.image.medium;
         let img = $("<img>").attr("src", image).attr("alt", altDescription)
-        let name = $("<div>").text(`Name`).addClass("bold")
+        let name = $("<div>").text(`Name: `).addClass("bold")
         let nameText = $("<div>").text(altDescription);
-        let nameDiv = $("<div>").append(name, nameText)
-        let network = $("<div>").text(`Network`).addClass("bold")
+        let nameDiv = $("<div>").append(name, nameText).addClass("searchMain")
+        let network = $("<div>").text(`Network: `).addClass("bold")
         let networkText = $("<div>").text(result[i].show.network.name);
-        let networkDiv = $("<div>").append(network, networkText)
-        let genres = $("<div>").text(`Genres`).addClass("bold")
+        let networkDiv = $("<div>").append(network, networkText).addClass("searchMain")
+        let genres = $("<div>").text(`Genres: `).addClass("bold")
         let genresText = $("<div>").text(result[i].show.genres[0]);
-        let genresDiv = $("<div>").append(genres, genresText)
-        let description = $("<div>").text(`Summary`).addClass("bold")
-        let descriptionText = $("<div>").text(result[i].show.summary);
-        let descriptionDiv = $("<div>").append(description, descriptionText)
+        let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
+        let description = $("<div>").text(`Summary: ${result[i].show.summary}`).addClass("bold")
+        // let descriptionText = $("<div>").text(result[i].show.summary);
+        let descriptionDiv = $("<div>").append(description)
         let rightDiv = $("<div>");
-        leftDiv.append(img)
-        rightDiv.append(nameDiv, networkDiv, genresDiv, descriptionDiv)
+        leftDiv.addClass("leftSearch").append(img)
+        rightDiv.addClass("rightSearch").append(nameDiv, networkDiv, genresDiv, descriptionDiv)
 
-        mainDiv.append(leftDiv, rightDiv);
+        mainDiv.addClass("searchMain").append(leftDiv, rightDiv);
         $('.show-return').append(mainDiv)
       }
     }})
