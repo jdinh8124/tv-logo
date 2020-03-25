@@ -25,6 +25,9 @@
 
 ### Future additions
 - Responsiveness in regard to certain in between viewports
+- Y-axis page scrolling
+- show icon responsive design
+- search feature for shows 
 
 ### UX/UI Template
 ![Template Code Challenge Source Img](client/images/code-challenge2020.jpg)
