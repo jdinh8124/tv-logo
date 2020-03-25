@@ -42,8 +42,15 @@ function initalizeApp() {
               settings: {
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                infinite: true,
-                dots: true
+                arrows: false
+              },
+            },
+              {
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false
               }
             }
           ]
