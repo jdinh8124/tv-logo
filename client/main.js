@@ -16,7 +16,7 @@ function initalizeApp() {
       day = "0" + day;
     }
     let year = currentDate.getFullYear()
-    let date = `${year}-${month}-${day}`;
+    let date = `${year}-${month}-${25}`;
     $.ajax({
       dataType: "json",
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
