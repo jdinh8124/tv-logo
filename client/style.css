@@ -77,8 +77,9 @@ body{
 
 
 
+
 .show-pic{
-  margin-left: 60px;
+  /* margin-left: 60px; */
   height: 11.5rem;
 }
 
@@ -161,7 +162,7 @@ body{
 }
   .show-pic{
     height: 12rem;
-    margin-left: 0;
+    /* margin-left: 0; */
 }
   .tomorrows-schedule{
     height: 3rem;
@@ -187,7 +188,7 @@ body{
 }
   .show-pic{
     height: 9rem;
-    margin-left: 0 ;
+    /* margin-left: 0 ; */
 }
   .footer{
     font-size: 11px;
@@ -224,7 +225,7 @@ body{
 
   .show-pic{
     height: 4rem;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
   .tomorrows-schedule{
     height: 1.15rem;
@@ -268,7 +269,7 @@ body{
   }
   .show-pic{
     height: 3rem;
-    margin-left: 0px;
+    /* margin-left: 0px; */
 }
   #slide{
     width: 85%;
