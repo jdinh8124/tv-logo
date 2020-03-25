@@ -86,6 +86,7 @@ body{
   align-items: center;
 }
 
+
 .searchMain{
   display: flex;
 }
@@ -102,6 +103,7 @@ body{
 
 .bold{
   font-weight: 900;
+  margin-right: 5px;
 }
 
 button{
@@ -123,7 +125,15 @@ button{
 .show-return{
   display: flex;
   justify-content: space-between;
+  width: 95vw;
+  margin-top: 50px;
 }
+
+.show-return > div{
+  border: black 1px solid;
+  margin-right: 30px
+}
+
 
 .footer{
   display: flex;
