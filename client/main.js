@@ -86,9 +86,9 @@ function searchShows(){
         let networkText = $("<div>").text(result[i].show.network.name);
         let networkDiv = $("<div>").append(network, networkText).addClass("searchMain")
         let genres = $("<div>").text(`Genres:`).addClass("bold")
-        let genresText = $("<div>").append(result[i].show.genres[0]);
+        let genresText = $("<div>").text(result[i].show.genres[0]);
         let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
-        let description = $("<div>").text(`Summary: ${result[i].show.summary}`).addClass("bold")
+        let description = $("<div>").text(`Summary:`).addClass("bold").append(result[i].show.summary)
         // let descriptionText = $("<div>").text(result[i].show.summary);
         let descriptionDiv = $("<div>").append(description)
         let rightDiv = $("<div>");
