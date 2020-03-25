@@ -2,6 +2,7 @@ $(document).ready(initalizeApp);
 
 function initalizeApp() {
   getSchedule();
+  $("#search-target").on("submit", searchShows)
 }
 
 function getSlick(){
@@ -60,4 +61,20 @@ function getSlick(){
       getSlick();
     },
   });
+}
+
+function searchShows(){
+  event.preventDefault();
+  let search = $("#input-for-search").val();
+  $("#input-for-search").val("")
+  $.ajax({
+    dataType: "json",
+    url: `http://api.tvmaze.com/search/shows?q=${search}`,
+    method: "GET",
+    success: function (result) {
+      console.log(result)
+      let mainDiv = $("<div>");
+      let leftDiv = $("<div>");
+      let rightDiv = $("<div>");
+    }})
 }
