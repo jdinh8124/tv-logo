@@ -9,12 +9,11 @@ body{
 .parent-flex{
   display:flex;
   flex-direction: column;
-  width: 100vw;
 }
 
 .parent-header{
   background-color: #333;
-  height: 13%;
+  height: 13vh;
   top:5px;
 }
 .tv-img{
@@ -26,8 +25,6 @@ body{
 .parent-main{
   display: flex;
   background-color: #ECECEC;
-  height: 50%;
-
 }
 
 .main-left{
@@ -43,7 +40,7 @@ body{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 52%;
+  width: 50%;
 }
 
 .icons-genres{
@@ -64,10 +61,10 @@ body{
 
 .parent-slider{
   background-color: #333;
-  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .margin-around{
@@ -78,9 +75,9 @@ body{
   width: 75%;
 }
 
-.slick-slider{
+/* .slick-slider{
   width:100%;
-}
+} */
 
 
 .show-pic{
@@ -91,7 +88,7 @@ body{
 .footer{
   display: flex;
   font-family: arial;
-  height: 7%;
+  height: 7vh;
   background-color: #FFF;
   color:#333;
   align-items: center;
