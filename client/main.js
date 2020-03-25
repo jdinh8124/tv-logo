@@ -4,6 +4,34 @@ function initalizeApp() {
   getSchedule();
 }
 
+function getSlick(){
+  $('.slick-slider').slick({
+    arrows: true,
+    infinite: false,
+    dots: false,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    accessibility: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          arrows: false
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false
+        }
+      }
+    ]
+  });
+}
 
   function getSchedule(){
     let currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
@@ -29,32 +57,7 @@ function initalizeApp() {
           let div = $("<div>").append(picture);
           $(".slick-slider").append(div)
       }
-        $('.slick-slider').slick({
-          arrows: true,
-          infinite: false,
-          dots: false,
-          slidesToShow: 6,
-          slidesToScroll: 6,
-          accessibility: true,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                arrows: false
-              },
-            },
-              {
-              breakpoint: 400,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                arrows: false
-              }
-            }
-          ]
-        });
+      getSlick();
     },
   });
 }
