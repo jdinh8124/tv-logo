@@ -439,19 +439,32 @@ button{
     height: 1.75rem;
     padding-bottom: 0px;
   }
+  #search-target{
+    text-align: center;
+  }
+  #input-for-search{
+    margin: 10px;
+    width: 315px;
+    border: 1px black solid
+  }
 
-
-
-}
-  /* .show-pic-search{
+  .show-return{
+    flex-direction: column;
+    margin-left: 35px;
+  }
+  .show-search-div{
+    width: 90%;
+  }
+  show-pic-search{
     height: 25vh;
   }
    h4 ~ p {
-  font-size: .4rem;
+  font-size: .72rem;
 }
   .rightSearch{
-  font-size: .4rem;
+  font-size: .75rem;
 }
   .show-search-div{
   height: 33vh;
-} */
+}
+}
