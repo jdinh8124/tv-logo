@@ -65,6 +65,10 @@ function getSlick(){
 
 function searchShows(){
   event.preventDefault();
+  console.log($(".show-return"))
+  if ($(".show-return").children().length > 0 ){
+    $(".show-return").empty()
+  }
   let search = $("#input-for-search").val();
   $("#input-for-search").val("")
   $.ajax({
