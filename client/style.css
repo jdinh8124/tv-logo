@@ -311,6 +311,19 @@ button{
   .footer{
     font-size: 11px;
   }
+    h4 ~ p {
+  font-size: .43rem;
+}
+  .rightSearch{
+  font-size: .5rem;
+}
+  .show-search-div{
+  height: 15vh;
+}
+  .show-pic-search{
+    height: 11vh;
+  }
+
 }
 @media screen and (max-width: 790px) and (min-height: 1015px){
   .tv-img{
@@ -324,6 +337,9 @@ button{
     width: 7rem;
     top: 4px;
 }
+  .parent-main{
+    padding: 10px;
+  }
   .pick-of-the-week{
     height: 11rem;
 }
@@ -351,6 +367,20 @@ button{
   .margin-around{
     margin: 0;
   }
+
+      h4 ~ p {
+  font-size: .43rem;
+}
+  .rightSearch{
+  font-size: .4rem;
+}
+  .show-search-div{
+  height: 36vh;
+}
+  .show-pic-search{
+    height: 30vh;
+  }
+
 }
 
  @media screen and (max-width: 655px) {
