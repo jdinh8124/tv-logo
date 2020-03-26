@@ -45,7 +45,7 @@ function getSlick(){
       day = "0" + day;
     }
     let year = currentDate.getFullYear()
-    let date = `${year}-${month}-${25}`;
+    let date = `${year}-${month}-${24}`;
     $.ajax({
       dataType: "json",
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
@@ -65,7 +65,6 @@ function getSlick(){
 
 function searchShows(){
   event.preventDefault();
-  console.log($(".show-return"))
   if ($(".show-return").children().length > 0 ){
     $(".show-return").empty()
   }
@@ -76,8 +75,11 @@ function searchShows(){
     url: `http://api.tvmaze.com/search/shows?q=${search}`,
     method: "GET",
     success: function (result) {
-      console.log(result)
-      for(let i = 0; i < 3; i++){
+      let end = 0;
+      if(result.length > 2){
+        end = 3;
+      }
+      for(let i = 0; i < end; i++){
         let mainDiv = $("<div>");
         let leftDiv = $("<div>");
         let altDescription = result[i].show.name;
@@ -93,7 +95,6 @@ function searchShows(){
         let genresText = $("<div>").text(result[i].show.genres[0]);
         let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
         let description = $("<div>").text(`Summary:`).addClass("bold").append(result[i].show.summary.split("</p>")[0])
-        // let descriptionText = $("<div>").text(result[i].show.summary);
         let descriptionDiv = $("<div>").append(description)
         let rightDiv = $("<div>");
         leftDiv.addClass("leftSearch").append(img)
