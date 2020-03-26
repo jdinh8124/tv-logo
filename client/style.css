@@ -257,6 +257,9 @@ button{
 .rightSearch{
   font-size: .6rem;
 }
+  .show-pic-search{
+    height: 18vh;
+  }
 
 }
 
@@ -278,6 +281,19 @@ button{
   .browse-by-genre{
     width: 25rem;
     height: 4rem;
+  }
+
+  h4 ~ p {
+  font-size: .5rem;
+}
+  .rightSearch{
+  font-size: .7rem;
+}
+  .show-search-div{
+  height: 14vh;
+}
+  .show-pic-search{
+    height: 11vh;
   }
 }
 
