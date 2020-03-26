@@ -76,7 +76,7 @@ function searchShows(){
     url: `http://api.tvmaze.com/search/shows?q=${search}`,
     method: "GET",
     success: function (result) {
-      console.log(result[0].show)
+      console.log(result)
       for(let i = 0; i < 3; i++){
         let mainDiv = $("<div>");
         let leftDiv = $("<div>");
