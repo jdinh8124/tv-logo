@@ -65,6 +65,10 @@ function getSlick(){
 
 function searchShows(){
   event.preventDefault();
+  console.log($(".show-return"))
+  if ($(".show-return").children().length > 0 ){
+    $(".show-return").empty()
+  }
   let search = $("#input-for-search").val();
   $("#input-for-search").val("")
   $.ajax({
@@ -78,7 +82,7 @@ function searchShows(){
         let leftDiv = $("<div>");
         let altDescription = result[i].show.name;
         let image = result[i].show.image.medium;
-        let img = $("<img>").attr("src", image).attr("alt", altDescription).addClass('show-pic')
+        let img = $("<img>").attr("src", image).attr("alt", altDescription).addClass('show-pic-search')
         let name = $("<div>").text(`Name:`).addClass("bold")
         let nameText = $("<div>").text(altDescription);
         let nameDiv = $("<div>").append(name, nameText).addClass("searchMain")
@@ -88,14 +92,14 @@ function searchShows(){
         let genres = $("<div>").text(`Genres:`).addClass("bold")
         let genresText = $("<div>").text(result[i].show.genres[0]);
         let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
-        let description = $("<div>").text(`Summary:`).addClass("bold").append(result[i].show.summary)
+        let description = $("<div>").text(`Summary:`).addClass("bold").append(result[i].show.summary.split("</p>")[0])
         // let descriptionText = $("<div>").text(result[i].show.summary);
         let descriptionDiv = $("<div>").append(description)
         let rightDiv = $("<div>");
         leftDiv.addClass("leftSearch").append(img)
         rightDiv.addClass("rightSearch").append(nameDiv, networkDiv, genresDiv, descriptionDiv)
 
-        mainDiv.addClass("searchMain").append(leftDiv, rightDiv);
+        mainDiv.addClass("show-search-div").append(leftDiv, rightDiv);
         $('.show-return').append(mainDiv)
       }
     }})
