@@ -95,6 +95,7 @@ body{
   display: flex;
   width: 30%;
   height: 35vh;
+  overflow: hidden;
 }
 
 

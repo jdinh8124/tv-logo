@@ -75,8 +75,8 @@ function searchShows(){
     url: `http://api.tvmaze.com/search/shows?q=${search}`,
     method: "GET",
     success: function (result) {
+      console.log(result[0])
       if(result.length > 2){
-
       for(let i = 0; i < 3; i++){
         let mainDiv = $("<div>");
         let leftDiv = $("<div>");
@@ -92,12 +92,12 @@ function searchShows(){
         let genres = $("<div>").text(`Genres:`).addClass("bold")
         let genresText = $("<div>").text(result[i].show.genres[0]);
         let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
-        let description = $("<div>").text(`Summary:`).addClass("bold").append(result[i].show.summary.split("</p>")[0])
-        let descriptionDiv = $("<div>").append(description)
+        let description = $("<div>").text(`Summary:`).addClass("bold")
+        let shortnedText = result[i].show.summary.split("</p>")[0];
+          let descriptionDiv = $("<div>").append(description).html(shortnedText);
         let rightDiv = $("<div>");
         leftDiv.addClass("leftSearch").append(img)
         rightDiv.addClass("rightSearch").append(nameDiv, networkDiv, genresDiv, descriptionDiv)
-
         mainDiv.addClass("show-search-div").append(leftDiv, rightDiv);
         $('.show-return').append(mainDiv).removeClass(".not-found")
       }
