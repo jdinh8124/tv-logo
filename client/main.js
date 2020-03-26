@@ -63,6 +63,13 @@ function getSlick(){
   });
 }
 
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str
+  }
+  return str.slice(0, num) + '...'
+}
+
 function searchShows(){
   event.preventDefault();
   if ($(".show-return").children().length > 0 ){
@@ -92,9 +99,9 @@ function searchShows(){
         let genres = $("<div>").text(`Genres:`).addClass("bold")
         let genresText = $("<div>").text(result[i].show.genres[0]);
         let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
-        let description = $("<div>").text(`Summary:`).addClass("bold")
         let shortnedText = result[i].show.summary.split("</p>")[0];
-          let descriptionDiv = $("<div>").append(description).html(shortnedText);
+        let truncated = truncateString(shortnedText, 450)
+        let descriptionDiv = $("<div>").append(`<h4 class="no-margin">Summary:</h4> ${truncated}`);
         let rightDiv = $("<div>");
         leftDiv.addClass("leftSearch").append(img)
         rightDiv.addClass("rightSearch").append(nameDiv, networkDiv, genresDiv, descriptionDiv)

@@ -86,6 +86,13 @@ body{
   align-items: center;
 }
 
+.no-margin{
+  margin: 0;
+}
+
+.no-margin ~ p{
+  margin: 0;
+}
 
 .searchMain{
   display: flex;
