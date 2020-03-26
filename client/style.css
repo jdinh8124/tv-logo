@@ -383,6 +383,21 @@ button{
 
 }
 
+ @media screen and (max-width: 740px) {
+  .show-pic-search{
+    height: 25vh;
+  }
+   h4 ~ p {
+  font-size: .4rem;
+}
+  .rightSearch{
+  font-size: .4rem;
+}
+  .show-search-div{
+  height: 33vh;
+}
+ }
+
  @media screen and (max-width: 655px) {
   .tv-img{
     margin-bottom: 25px;
@@ -424,4 +439,19 @@ button{
     height: 1.75rem;
     padding-bottom: 0px;
   }
+
+
+
 }
+  /* .show-pic-search{
+    height: 25vh;
+  }
+   h4 ~ p {
+  font-size: .4rem;
+}
+  .rightSearch{
+  font-size: .4rem;
+}
+  .show-search-div{
+  height: 33vh;
+} */
