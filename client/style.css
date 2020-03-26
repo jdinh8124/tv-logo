@@ -91,6 +91,22 @@ body{
   display: flex;
 }
 
+.show-search-div{
+  display: flex;
+  width: 30%;
+  height: 35vh;
+}
+
+
+.show-pic-search{
+  height: auto;
+  margin: 5px;
+}
+
+.bold p {
+  font-size: .9rem;
+}
+
 .leftSearch{
   width: 40%;
 }
