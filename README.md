@@ -36,6 +36,8 @@
 
 ### Full Screen
 ![Tv-Logo Landing Page](demo.gif)
+![Tv-Logo Search Feature](demo-search.gif)
+
 
 ### Ipad Pro
 ![Tv-Logo Ipad Landing Page](demo-ipad.gif)

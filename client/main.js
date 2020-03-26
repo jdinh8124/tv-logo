@@ -45,7 +45,7 @@ function getSlick(){
       day = "0" + day;
     }
     let year = currentDate.getFullYear()
-    let date = `${year}-${month}-${25}`;
+    let date = `${year}-${month}-${24}`;
     $.ajax({
       dataType: "json",
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
@@ -63,9 +63,15 @@ function getSlick(){
   });
 }
 
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str
+  }
+  return str.slice(0, num) + '...'
+}
+
 function searchShows(){
   event.preventDefault();
-  console.log($(".show-return"))
   if ($(".show-return").children().length > 0 ){
     $(".show-return").empty()
   }
@@ -76,7 +82,7 @@ function searchShows(){
     url: `http://api.tvmaze.com/search/shows?q=${search}`,
     method: "GET",
     success: function (result) {
-      console.log(result[0].show)
+      if(result.length > 2){
       for(let i = 0; i < 3; i++){
         let mainDiv = $("<div>");
         let leftDiv = $("<div>");
@@ -92,15 +98,18 @@ function searchShows(){
         let genres = $("<div>").text(`Genres:`).addClass("bold")
         let genresText = $("<div>").text(result[i].show.genres[0]);
         let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
-        let description = $("<div>").text(`Summary:`).addClass("bold").append(result[i].show.summary.split("</p>")[0])
-        // let descriptionText = $("<div>").text(result[i].show.summary);
-        let descriptionDiv = $("<div>").append(description)
+        let shortnedText = result[i].show.summary.split("</p>")[0];
+        let truncated = truncateString(shortnedText, 450)
+        let descriptionDiv = $("<div>").append(`<h4 class="no-margin">Summary:</h4> ${truncated}`);
         let rightDiv = $("<div>");
         leftDiv.addClass("leftSearch").append(img)
         rightDiv.addClass("rightSearch").append(nameDiv, networkDiv, genresDiv, descriptionDiv)
-
         mainDiv.addClass("show-search-div").append(leftDiv, rightDiv);
-        $('.show-return').append(mainDiv)
+        $('.show-return').append(mainDiv).removeClass(".not-found")
       }
+    }else{
+        let mainDiv = $("<div>").append("<h2>Can not find shows you are searching!</h2>")
+        $('.show-return').append(mainDiv).addClass("not-found")
+    }
     }})
 }

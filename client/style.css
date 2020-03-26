@@ -86,6 +86,13 @@ body{
   align-items: center;
 }
 
+.no-margin{
+  margin: 0;
+}
+
+.no-margin ~ p{
+  margin: 0;
+}
 
 .searchMain{
   display: flex;
@@ -95,6 +102,7 @@ body{
   display: flex;
   width: 30%;
   height: 35vh;
+  overflow: hidden;
 }
 
 
@@ -103,9 +111,11 @@ body{
   margin: 10px;
 }
 
-.bold p {
-  font-size: .85rem;
+h4 ~ p {
+  font-size: 1rem;
 }
+
+
 
 .leftSearch{
   width: 40%;
@@ -146,6 +156,10 @@ button{
   margin-top: 50px;
 }
 
+.not-found{
+  justify-content: center;
+}
+
 .show-return > div{
   border: black 1px solid;
   margin-right: 30px
@@ -166,6 +180,20 @@ button{
   #slide{
     width: 90%;
   }
+  .show-pic-search{
+    height: 20vh;
+  }
+  h4 ~ p {
+  font-size: .7rem;
+}
+.rightSearch{
+  font-size: .8rem;
+}
+
+.show-search-div{
+  height: 22vh;
+}
+
 }
 
 @media screen  and (max-width: 1300px){
@@ -223,6 +251,16 @@ button{
   .show-pic{
     height: 8rem;
 }
+  h4 ~ p {
+  font-size: .5rem;
+}
+.rightSearch{
+  font-size: .6rem;
+}
+  .show-pic-search{
+    height: 18vh;
+  }
+
 }
 
 @media screen and (max-width: 1035px) and (min-height: 1070px){
@@ -244,6 +282,19 @@ button{
     width: 25rem;
     height: 4rem;
   }
+
+  h4 ~ p {
+  font-size: .5rem;
+}
+  .rightSearch{
+  font-size: .7rem;
+}
+  .show-search-div{
+  height: 14vh;
+}
+  .show-pic-search{
+    height: 11vh;
+  }
 }
 
 @media screen and (max-width: 915px) {
@@ -260,6 +311,19 @@ button{
   .footer{
     font-size: 11px;
   }
+    h4 ~ p {
+  font-size: .43rem;
+}
+  .rightSearch{
+  font-size: .5rem;
+}
+  .show-search-div{
+  height: 15vh;
+}
+  .show-pic-search{
+    height: 11vh;
+  }
+
 }
 @media screen and (max-width: 790px) and (min-height: 1015px){
   .tv-img{
@@ -273,6 +337,9 @@ button{
     width: 7rem;
     top: 4px;
 }
+  .parent-main{
+    padding: 10px;
+  }
   .pick-of-the-week{
     height: 11rem;
 }
@@ -300,7 +367,36 @@ button{
   .margin-around{
     margin: 0;
   }
+
+      h4 ~ p {
+  font-size: .43rem;
 }
+  .rightSearch{
+  font-size: .4rem;
+}
+  .show-search-div{
+  height: 36vh;
+}
+  .show-pic-search{
+    height: 30vh;
+  }
+
+}
+
+ @media screen and (max-width: 740px) {
+  .show-pic-search{
+    height: 25vh;
+  }
+   h4 ~ p {
+  font-size: .4rem;
+}
+  .rightSearch{
+  font-size: .4rem;
+}
+  .show-search-div{
+  height: 33vh;
+}
+ }
 
  @media screen and (max-width: 655px) {
   .tv-img{
@@ -343,4 +439,32 @@ button{
     height: 1.75rem;
     padding-bottom: 0px;
   }
+  #search-target{
+    text-align: center;
+  }
+  #input-for-search{
+    margin: 10px;
+    width: 315px;
+    border: 1px black solid
+  }
+
+  .show-return{
+    flex-direction: column;
+    margin-left: 35px;
+  }
+  .show-search-div{
+    width: 90%;
+  }
+  show-pic-search{
+    height: 25vh;
+  }
+   h4 ~ p {
+  font-size: .72rem;
+}
+  .rightSearch{
+  font-size: .75rem;
+}
+  .show-search-div{
+  height: 33vh;
+}
 }
