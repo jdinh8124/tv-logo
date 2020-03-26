@@ -72,7 +72,7 @@ body{
 }
 
 #slide{
-  width: 75%;
+  width: 90%;
 }
 
 .show-pic{
@@ -99,12 +99,12 @@ body{
 
 
 .show-pic-search{
-  height: auto;
-  margin: 5px;
+  height: 30vh;
+  margin: 10px;
 }
 
 .bold p {
-  font-size: .9rem;
+  font-size: .85rem;
 }
 
 .leftSearch{
@@ -115,6 +115,7 @@ body{
   width: 60%;
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 .bold{
@@ -141,7 +142,7 @@ button{
 .show-return{
   display: flex;
   justify-content: space-between;
-  width: 95vw;
+  width: 95%;
   margin-top: 50px;
 }
 
