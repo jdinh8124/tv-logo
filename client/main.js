@@ -75,11 +75,9 @@ function searchShows(){
     url: `http://api.tvmaze.com/search/shows?q=${search}`,
     method: "GET",
     success: function (result) {
-      let end = 0;
       if(result.length > 2){
-        end = 3;
-      }
-      for(let i = 0; i < end; i++){
+
+      for(let i = 0; i < 3; i++){
         let mainDiv = $("<div>");
         let leftDiv = $("<div>");
         let altDescription = result[i].show.name;
@@ -101,7 +99,11 @@ function searchShows(){
         rightDiv.addClass("rightSearch").append(nameDiv, networkDiv, genresDiv, descriptionDiv)
 
         mainDiv.addClass("show-search-div").append(leftDiv, rightDiv);
-        $('.show-return').append(mainDiv)
+        $('.show-return').append(mainDiv).removeClass(".not-found")
       }
+    }else{
+        let mainDiv = $("<div>").append("<h2>Can not find shows you are searching!</h2>")
+        $('.show-return').append(mainDiv).addClass("not-found")
+    }
     }})
 }

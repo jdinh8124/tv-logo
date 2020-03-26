@@ -107,6 +107,8 @@ body{
   font-size: .85rem;
 }
 
+
+
 .leftSearch{
   width: 40%;
 }
@@ -144,6 +146,10 @@ button{
   justify-content: space-between;
   width: 95%;
   margin-top: 50px;
+}
+
+.not-found{
+  justify-content: center;
 }
 
 .show-return > div{
