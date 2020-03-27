@@ -503,4 +503,7 @@ button{
   .show-pic-search{
     height: 21vh;
   }
+  .parent-header{
+    height: 15vh;
+  }
  }
