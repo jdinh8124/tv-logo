@@ -44,7 +44,7 @@ body{
 }
 
 .icons-genres{
-  width:70%;
+  width:90%;
   display: flex;
   justify-content: space-between;
 }
@@ -55,8 +55,8 @@ body{
 
 .now-playing{
   margin: 25px 0px 25px 0;
-  width: 33rem;
-  height: 11rem;
+  width: 41rem;
+  height: 14rem;
 }
 
 .parent-slider{
@@ -176,13 +176,14 @@ button{
   justify-content: center;
 }
 
-@media screen  and (max-width: 1400px){
+
+
+
+@media screen  and (max-width: 1500px){
   #slide{
     width: 90%;
   }
-  .show-pic-search{
-    height: 20vh;
-  }
+
   h4 ~ p {
   font-size: .7rem;
 }
@@ -191,9 +192,22 @@ button{
 }
 
 .show-search-div{
-  height: 22vh;
+  height: 40vh;
 }
 
+  .show-search-div{
+  height: auto;
+}
+
+  .show-pic-search{
+    height: 20vh;
+  }
+}
+
+@media screen  and (max-width: 1500px) and (max-height: 1000px)  {
+  .show-pic-search{
+    height: 32vh;
+  }
 }
 
 @media screen  and (max-width: 1300px){
@@ -205,15 +219,15 @@ button{
 }
 
   .icons-genres > img{
-    height: 5rem;
+    height: 7rem;
 }
   .browse-by-genre{
     width: 15rem;
 }
 
   .now-playing{
-    width: 21rem;
-    height: 7rem;
+    width: 32rem;
+    height: 10rem;
 }
 
   .show-pic{
@@ -323,7 +337,16 @@ button{
   .show-pic-search{
     height: 11vh;
   }
-
+  .icons-genres > img {
+    height: 5rem;
+  }
+  .now-playing {
+    width: 20rem;
+    height: 9rem;
+}
+.icons-genres{
+  width: 85%;
+}
 }
 @media screen and (max-width: 790px) and (min-height: 1015px){
   .tv-img{
@@ -468,3 +491,16 @@ button{
   height: 33vh;
 }
 }
+
+
+ @media screen and (max-width: 655px) {
+   h4 ~ p {
+  font-size: .62rem;
+}
+  .show-pic{
+    height: 5rem;
+  }
+  .icons-genres{
+  width: 95%;
+}
+ }
