@@ -45,7 +45,7 @@ function getSlick(){
       day = "0" + day;
     }
     let year = currentDate.getFullYear()
-    let date = `${year}-${month}-${24}`;
+    let date = `${year}-${month}-${day}`;
     $.ajax({
       dataType: "json",
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,

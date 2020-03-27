@@ -478,9 +478,6 @@ button{
   .show-search-div{
     width: 90%;
   }
-  show-pic-search{
-    height: 25vh;
-  }
    h4 ~ p {
   font-size: .72rem;
 }
@@ -488,7 +485,7 @@ button{
   font-size: .75rem;
 }
   .show-search-div{
-  height: 33vh;
+  height: auto;
 }
 }
 
@@ -503,4 +500,10 @@ button{
   .icons-genres{
   width: 95%;
 }
+  .show-pic-search{
+    height: 21vh;
+  }
+  .parent-header{
+    height: 15vh;
+  }
  }
