@@ -44,7 +44,7 @@ body{
 }
 
 .icons-genres{
-  width:70%;
+  width:90%;
   display: flex;
   justify-content: space-between;
 }
@@ -176,12 +176,12 @@ button{
   justify-content: center;
 }
 
-@media screen  and (max-width: 1400px){
+@media screen  and (max-width: 1500px){
   #slide{
     width: 90%;
   }
   .show-pic-search{
-    height: 20vh;
+    height: 32vh;
   }
   h4 ~ p {
   font-size: .7rem;
@@ -191,10 +191,19 @@ button{
 }
 
 .show-search-div{
-  height: 22vh;
+  height: 40vh;
 }
 
 }
+@media screen  and (max-width: 1500px){
+  .show-pic-search{
+    height: 20vh;
+  }
+  .show-search-div{
+  height: 25vh;
+}
+}
+
 
 @media screen  and (max-width: 1300px){
   .tv-img{
