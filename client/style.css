@@ -156,6 +156,10 @@ button{
   margin-top: 50px;
 }
 
+.center{
+  justify-content: center;
+}
+
 .not-found{
   justify-content: center;
 }
