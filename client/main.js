@@ -96,7 +96,13 @@ function searchShows(){
         let networkText = $("<div>").text(result[i].show.network.name);
         let networkDiv = $("<div>").append(network, networkText).addClass("searchMain")
         let genres = $("<div>").text(`Genres:`).addClass("bold")
-        let genresText = $("<div>").text(result[i].show.genres[0]);
+        let resultGenre;
+        if (result[i].show.genres.length === 1 ){
+          resultGenre = result[i].show.genres[0];
+        }else{
+          resultGenre = `${result[i].show.genres[0]}, ${result[i].show.genres[1]}`
+        }
+        let genresText = $("<div>").text(resultGenre);
         let genresDiv = $("<div>").append(genres, genresText).addClass("searchMain")
         let shortnedText = result[i].show.summary.split("</p>")[0];
         let truncated = truncateString(shortnedText, 450)
