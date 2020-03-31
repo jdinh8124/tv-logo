@@ -45,13 +45,13 @@ function getSlick(){
       day = "0" + day;
     }
     let year = currentDate.getFullYear()
-    let date = `${year}-${month}-${28}`;
+    let date = `${year}-${month}-${day}`;
     $.ajax({
       dataType: "json",
       url: `http://api.tvmaze.com/schedule?country=US&date=${date}`,
       method: "GET",
       success: function (result) {
-        for(let i = 0; i < 24; i++){
+        for(let i = 0; i < 23; i++){
           let image = result[i].show.image.medium;
           let altDescription = result[i].show.name;
           let picture = $("<img>").attr("src", image).attr("alt", altDescription).addClass('show-pic')
