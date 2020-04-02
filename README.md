@@ -24,7 +24,7 @@
 - The Slick Slider needs to be called after the TV schedule API in order to correctly build a slider due to asynchronous actions
 
 ### Future additions
-- Responsiveness in regard to certain in between viewports
+- More use of the Tv schedule API
 
 ### UX/UI Template
 ![Template Code Challenge Source Img](client/images/code-challenge2020.jpg)
