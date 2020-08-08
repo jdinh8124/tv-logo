@@ -45,7 +45,7 @@ function getSlick(){
       day = "0" + day;
     }
     let year = currentDate.getFullYear()
-    let date = `${2020}-${'04'}-${'01'}`;
+    let date = `${year}-${'08'}-${'06'}`;
     console.log(date)
     $.ajax({
       dataType: "json",
